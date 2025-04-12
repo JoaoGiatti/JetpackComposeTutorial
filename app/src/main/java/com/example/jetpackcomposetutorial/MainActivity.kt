@@ -26,3 +26,10 @@ class MainActivity : ComponentActivity() {
 fun MessageCard(name: String){
     Text(text = "hello $name")
 }
+
+// Preview é uma função que permite visualizar o componente em tempo real, ela deve ser delcarada em funções sem parâmetros
+@Preview
+@Composable
+fun PreviewMessageCard(){
+    MessageCard("Android")
+}
